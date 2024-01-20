@@ -1,0 +1,10 @@
+// Add your dependencies here
+
+dependencies {
+    // Lombok
+    compileOnly("org.projectlombok:lombok:1.18.22")
+    annotationProcessor("org.projectlombok:lombok:1.18.22")
+
+    api("mega:megaping-mc1.7.10:1.2.1:dev")
+    runtimeOnly("mega:megaping-mc1.7.10:1.2.1:dev")
+}

@@ -1,0 +1,26 @@
+{
+    "goldOre": {
+        "category": "neutral",
+        "sounds": [
+            "gold_1",
+            "gold_2",
+            "gold_3",
+            "gold_4",
+            "gold_5",
+            "gold_6",
+            "gold_7"
+        ]
+    },
+    "mushroom": {
+        "category": "neutral",
+        "sounds": [
+            "mushroom_1"
+        ]
+    },
+    "rich": {
+        "category": "neutral",
+        "sounds": [
+            "rich_1"
+        ]
+    }
+}
