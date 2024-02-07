@@ -21,7 +21,8 @@ public final class SoundMap {
         loadBlocks(PingAddonConfig.Gold.blocks, PingSounds.gold);
         loadBlocks(PingAddonConfig.Iron.blocks, PingSounds.iron);
         loadBlocks(PingAddonConfig.Machine.blocks, PingSounds.machine);
-        loadBlocks(PingAddonConfig.Meteorite.blocks, PingSounds.mushroom);
+        loadBlocks(PingAddonConfig.Meteorite.blocks, PingSounds.meteorite);
+        loadBlocks(PingAddonConfig.Mushroom.blocks, PingSounds.mushroom);
         loadBlocks(PingAddonConfig.Oil.blocks, PingSounds.oil);
         loadBlocks(PingAddonConfig.Rich.blocks, PingSounds.rich);
         loadBlocks(PingAddonConfig.Spawner.blocks, PingSounds.spawner);

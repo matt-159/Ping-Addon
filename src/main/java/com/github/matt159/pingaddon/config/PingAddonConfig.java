@@ -20,7 +20,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Dirt")
+            category = "dirt")
     public static class Dirt {
         @Config.Comment("Blocks that will play a 'dirt' sound when pinged")
         @Config.DefaultStringList({ "tile.dirt" })
@@ -35,7 +35,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Driller")
+            category = "driller")
     public static class Driller {
         @Config.Comment("Blocks that will play a 'driller' sound when pinged")
         @Config.DefaultStringList({})
@@ -50,7 +50,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Flora")
+            category = "flora")
     public static class Flora {
         @Config.Comment("Blocks that will play a 'flora' sound when pinged")
         @Config.DefaultStringList({ "tile.tallGrass", "tile.flower1", "tile.flower2" })
@@ -65,7 +65,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Gold")
+            category = "gold")
     public static class Gold {
         @Config.Comment("Blocks that will play a 'gold' sound when pinged")
         @Config.DefaultStringList({ "tile.goldOre" })
@@ -80,7 +80,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Iron")
+            category = "iron")
     public static class Iron {
         @Config.Comment("Blocks that will play a 'iron' sound when pinged")
         @Config.DefaultStringList({ "tile.ironOre" })
@@ -95,7 +95,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Machine")
+            category = "machine")
     public static class Machine {
         @Config.Comment("Blocks that will play a 'machine' sound when pinged")
         @Config.DefaultStringList({})
@@ -110,7 +110,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Meteorite")
+            category = "meteorite")
     public static class Meteorite {
         @Config.Comment("Blocks that will play a 'meteorite' sound when pinged")
         @Config.DefaultStringList({})
@@ -125,7 +125,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Mushroom")
+            category = "mushroom")
     public static class Mushroom {
         @Config.Comment("Blocks that will play a 'mushroom' sound when pinged")
         @Config.DefaultStringList({ "tile.mushroom" })
@@ -140,7 +140,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Oil")
+            category = "oil")
     public static class Oil {
         @Config.Comment("Blocks that will play a 'oil' sound when pinged")
         @Config.DefaultStringList({})
@@ -155,7 +155,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Rich")
+            category = "rich")
     public static class Rich {
         @Config.Comment("Blocks that will play a 'rich' sound when pinged")
         @Config.DefaultStringList({ "tile.blockGold" })
@@ -170,7 +170,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Spawner")
+            category = "spawner")
     public static class Spawner {
         @Config.Comment("Blocks that will play a 'spawner' sound when pinged")
         @Config.DefaultStringList({})
@@ -185,7 +185,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Strange")
+            category = "strange")
     public static class Strange {
         @Config.Comment("Blocks that will play a 'strange' sound when pinged")
         @Config.DefaultStringList({})
@@ -200,7 +200,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Warning")
+            category = "warning")
     public static class Warning {
         @Config.Comment("Blocks that will play a 'warning' sound when pinged")
         @Config.DefaultStringList({})
@@ -215,7 +215,7 @@ public class PingAddonConfig {
     }
 
     @Config(modid = Tags.MODID,
-            category = "Worthless")
+            category = "worthless")
     public static class Worthless {
         @Config.Comment("Blocks that will play a 'worthless' sound when pinged")
         @Config.DefaultStringList({})

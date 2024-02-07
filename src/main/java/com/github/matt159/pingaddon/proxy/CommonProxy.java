@@ -1,5 +1,6 @@
 package com.github.matt159.pingaddon.proxy;
 
+import com.github.matt159.pingaddon.config.SoundMap;
 import com.github.matt159.pingaddon.events.ConfigChangedEventListener;
 import com.github.matt159.pingaddon.events.PingEventListener;
 import lombok.val;
@@ -13,9 +14,10 @@ public class CommonProxy {
     public void init(FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(new PingEventListener());
 
-
         val configChangedEventListener = new ConfigChangedEventListener();
         MinecraftForge.EVENT_BUS.register(configChangedEventListener);
         FMLCommonHandler.instance().bus().register(configChangedEventListener);
+
+        SoundMap.reload();
     }
 }
