@@ -5,6 +5,8 @@ dependencies {
     compileOnly("org.projectlombok:lombok:1.18.22")
     annotationProcessor("org.projectlombok:lombok:1.18.22")
 
-    api("mega:megaping-mc1.7.10:1.2.1:dev")
-    runtimeOnly("mega:megaping-mc1.7.10:1.2.1:dev")
+    api("mega:megaping-mc1.7.10:1.2.4-mega:dev")
+    runtimeOnly("mega:megaping-mc1.7.10:1.2.4-mega:dev")
+
+    implementation("com.falsepattern:falsepatternlib-mc1.7.10:1.0.0:dev")
 }

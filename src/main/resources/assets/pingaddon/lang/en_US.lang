@@ -1,0 +1,15 @@
+ping.addon.group.general.showPingedBlock=Show pinged block
+ping.addon.group.dirt=Dirt Blocks
+ping.addon.group.driller=Driller Blocks
+ping.addon.group.flora=Flora Blocks
+ping.addon.group.gold=Gold Blocks
+ping.addon.group.iron=Iron Blocks
+ping.addon.group.machine=Machine Blocks
+ping.addon.group.meteorite=Meteorite Blocks
+ping.addon.group.mushroom=Mushroom Blocks
+ping.addon.group.oil=Oil Blocks
+ping.addon.group.rich=We're Rich Blocks
+ping.addon.group.spawner=Spawner Blocks
+ping.addon.group.strange=Strange Blocks
+ping.addon.group.warning=Warning Blocks
+ping.addon.group.worthless=Worthless Blocks

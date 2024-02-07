@@ -3,62 +3,35 @@ package com.github.matt159.pingaddon;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.*;
+
+import com.github.matt159.pingaddon.config.PingAddonConfig;
+import com.github.matt159.pingaddon.config.SoundMap;
+import com.github.matt159.pingaddon.proxy.CommonProxy;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = Tags.MODID,
      version = Tags.VERSION,
      name = Tags.MODNAME,
-     acceptedMinecraftVersions = "[1.7.10]")
+     acceptedMinecraftVersions = "[1.7.10]",
+     guiFactory = Tags.GROUPNAME + ".client.gui.config.PingAddonGuiFactory",
+     dependencies = "required-after:megaping@[1.2,); " +
+                    "required-after:falsepatternlib@[0.12,);")
 public class PingAddon {
     private static Logger LOG = LogManager.getLogger(Tags.MODID);
 
-    @SidedProxy(clientSide= Tags.GROUPNAME + ".ClientProxy", serverSide=Tags.GROUPNAME + ".CommonProxy")
+    @SidedProxy(clientSide= Tags.GROUPNAME + ".proxy.ClientProxy",
+                serverSide= Tags.GROUPNAME + ".proxy.CommonProxy")
     public static CommonProxy proxy;
 
-    @Mod.EventHandler
-    // preInit "Run before anything else. Read your config, create blocks, items,
-    // etc, and register them with the GameRegistry."
-    public void preInit(FMLPreInitializationEvent event) {
-        proxy.preInit(event);
+    static {
+        PingAddonConfig.poke();
     }
 
     @Mod.EventHandler
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes."
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
-    }
-
-    @Mod.EventHandler
-    // postInit "Handle interaction with other mods, complete your setup based on this."
-    public void postInit(FMLPostInitializationEvent event) {
-        proxy.postInit(event);
-    }
-
-    @Mod.EventHandler
-    public void serverAboutToStart(FMLServerAboutToStartEvent event) {
-        proxy.serverAboutToStart(event);
-    }
-
-    @Mod.EventHandler
-    // register server commands in this event handler
-    public void serverStarting(FMLServerStartingEvent event) {
-        proxy.serverStarting(event);
-    }
-
-    @Mod.EventHandler
-    public void serverStarted(FMLServerStartedEvent event) {
-        proxy.serverStarted(event);
-    }
-
-    @Mod.EventHandler
-    public void serverStopping(FMLServerStoppingEvent event) {
-        proxy.serverStopping(event);
-    }
-
-    @Mod.EventHandler
-    public void serverStopped(FMLServerStoppedEvent event) {
-        proxy.serverStopped(event);
     }
 
     public static void debug(String message) {
